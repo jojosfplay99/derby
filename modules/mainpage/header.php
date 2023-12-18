@@ -131,7 +131,7 @@
                     Accounts
                   </button>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" onclick="Cookies.remove('id',  {domain:'localhost', path: '/lmos'});" href="../index.html"><i class="fa-solid fa-power-off"></i>Log Out</a></li>                    
+                    <li><a class="dropdown-item" onclick="Cookies.remove('id',  {domain:'localhost', path: '/lmos'});" href="../index.php"><i class="fa-solid fa-power-off"></i>Log Out</a></li>                    
                   </ul>
                 </div>
               </div>                            
