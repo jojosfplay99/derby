@@ -1,0 +1,37 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* Created with https://www.css-gradient.com */
+    background: #536BAE;
+    background: -webkit-linear-gradient(top left, #536BAE, #A8C9B6);
+    background: -moz-linear-gradient(top left, #536BAE, #A8C9B6);
+    background: linear-gradient(to bottom right, #536BAE, #A8C9B6);
+    
+
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+}
+
+h4.program-head{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+}
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
