@@ -62,17 +62,23 @@
             <i class="fa-solid fa-globe"></i>
           </a>
 
-          <ul class="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">          
-            <li>           
-              <a href="index.php" class="nav-link text-white text-center">                    
-                <i class="fa-solid fa-house"></i><br>Home
-              </a>              
+          <ul class="nav col-lg-auto my-2 justify-content-center my-md-0 text-small">                      
+
+            <li class="nav-item dropdown mx-1 btn-primary">
+              <div class="d-flex flex-column">              
+                <div class="text-center"><i class="fa fa-home" aria-hidden="true"></i></div>
+                <div class="dropdown-center">                
+                  <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="height:100%;width:100%;" onclick="window.location.href='index.php'">                                    
+                    Home
+                  </button>                  
+                </div>
+              </div>                            
             </li>
             
 
             <li class="nav-item dropdown mx-1 btn-primary">
               <div class="d-flex flex-column">              
-                <div class="text-center"><i class="fa-solid fa-calendar-days"></i></div>
+                <div class="text-center"><i class="fa-solid fa-users"></i></div>
                 <div class="dropdown-center">                
                   <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="height:100%;width:100%;">                  
                     Registrations
@@ -88,7 +94,7 @@
 
             <li class="nav-item dropdown mx-1 btn-primary">
               <div class="d-flex flex-column">              
-                <div class="text-center"><i class="fa-solid fa-calendar-days"></i></div>
+                <div class="text-center"><i class="fa-solid fa-people-arrows"></i></div>
                 <div class="dropdown-center">                
                   <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="height:100%;width:100%;">                  
                     Match Options
@@ -101,14 +107,37 @@
                 </div>
               </div>                            
             </li>
-                      
-            
 
-            <li>           
-              <a href="cashbook.php" class="nav-link text-white text-center">                    
-                <i class="fa-solid fa-file"></i><br>Ledger
-              </a>              
+             
+            <li class="nav-item dropdown mx-1 btn-primary">
+              <div class="d-flex flex-column">              
+                <div class="text-center"><i class="fa-solid fa-file-pen"></i></div>
+                <div class="dropdown-center">                
+                  <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="height:100%;width:100%;">                  
+                    Data Entry
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="cashbook.php" class="dropdown-item"><i class="fa-solid fa-file"></i>Ledger</a></li>                    
+                  </ul>
+                </div>
+              </div>                            
             </li>
+
+            <li class="nav-item dropdown mx-1 btn-primary">
+              <div class="d-flex flex-column">              
+                <div class="text-center"><i class="fa-solid fa-user"></i></div>
+                <div class="dropdown-center">                
+                  <button class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="height:100%;width:100%;">                  
+                    Accounts
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="cashbook.php" class="dropdown-item" onclick="Cookies.remove('id',  {domain:'localhost', path: '/lmos'});" href="../index.html"><i class="fa-solid fa-power-off"></i>Log Out</a></li>                    
+                  </ul>
+                </div>
+              </div>                            
+            </li>
+
+            
             
           </ul>
         </div>
